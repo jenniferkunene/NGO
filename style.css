@@ -12,7 +12,8 @@
 }
 
 :root {
-    --main-color: #459f9f;
+    --main-color: #078d96ec;
+    --bluu: #74aef9;
     --dark-color: #212833;
     --light-color: #f7f7f7;
     --text-color: #5e5f6e;
@@ -107,6 +108,7 @@ nav {
     align-items: center;
     gap: 1rem;
     padding: 0 3rem;
+    background-color: var(--light-color);
 }
 
 nav .logo {
@@ -555,47 +557,159 @@ section .arrow {
 }
 
 
-.testimonial {
+.sec-01 {
+    position: relative;
     display: flex;
-    grid-template-columns:  1fr 1.5fr;
-    gap: 1rem;
-    overflow: hidden;
-    margin: 2rem 0;
-    background: var(--blu-color);
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    padding: 80px 100px;
+    color: #fff;
 }
 
-.testimonial .resources {
+.contain{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.con{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con .imagey{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.con .imagey .img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.con .word-box{
+    z-index: 222;
+    background:rgba(124, 175, 238, 0.724);
+    backdrop-filter: blur(20px);
+    padding: 15px;
+    max-width: 500px;
+    border: 1px solid rgba(48, 71, 71, 0.4);
+    border-radius: 10px;
+
+}
+
+.con .word-box{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.info-title{
+    font-size: 1.8rem;
+    margin-top: 40px;
+}
+
+.info{
+    width: 700px;
+    margin-left: 50px;
+}
+
+.sec-02 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+.sec-02 .imagel{
+    position: relative;
+    width: 1000px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.sec-02 .imagel .img{
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sec-02 .infos{
+    z-index: 200;
+    background:rgba(124, 175, 238, 0.724);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    max-width: 500px;
+    border: 1px solid rgba(48, 71, 71, 0.4);
+    border-radius: 10px;
+}
+.sec-02 .infos-box{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.infos{
+    width: 700px;
+    margin-left: 50px;
+}
+
+.resources {
     width: 70%;
     height: 73%;
-    background: var(--more-color);
+    background: var(--other-color);
     padding: 1.5rem;
 }
 
-.testimonial .resources h4{
+.resources h4{
     color: rgb(255 255 255 / 70%);
 }
 
-.testimonial .resources h3 {
+.resources h3 {
     font-size: 3rem;
     color: var(--light-color);
     line-height: 1.1;
     margin: .8rem 0 3.5rem 0;
 }
 
-.testimonial .resources .imager {
+.resources .imager {
     height: 67%;
     max-height: 80vh;
     overflow: hidden;
 }
 
-.testimonial .resources .imager .img{
+.resources .imager .img{
     float: left;
-    max-width: 200px;
+    max-width: 100px;
     margin-right: 20px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 
 }
 
@@ -615,13 +729,17 @@ section .arrow {
     }
 }
 
+
+
 .resources-and-review {
-    background-color: lightgray;
+    background-color: rgb(123, 193, 225);
+    margin-top: 10px;
+    margin-bottom: 3px;
     
 }
 .resources-and-review .review {
-    background-color: rgba(206, 219, 245, 0.6); 
-      color: rgb(18, 18, 19); 
+    background-color: rgba(162, 191, 248, 0.6); 
+      color: rgb(47, 47, 47); 
       padding: 20px;
       border-radius: 50px; 
       font-size: 16px;
@@ -636,11 +754,11 @@ section .arrow {
 
 .resources-and-review .imager {
     width: 100vh;
-    height: 100%;
+    height: 50%;
 }
 
 .donation {
-    background: var(--other-color);
+    background: var(--bluu);
     padding: 10px;
     line-height: 1.5;
     color: white;
@@ -661,7 +779,7 @@ section .arrow {
 .donation .head a {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #4f4949;
+    color: #efe8e8;
     border: 2px solid rgba(13, 67, 213, 0.561);
     padding: .4rem 1rem;
 }
@@ -698,7 +816,7 @@ section .arrow {
 }
 
 .work-section .container {
-    background: var(--extra-color);
+    background: var(--main-color);
     position: relative;
     height: 100%;
 }
@@ -875,7 +993,7 @@ footer .footer .links {
 
 
 .donation {
-    background: var(--other-color);
+    background: var(--bluu);
     margin-top: 1.5rem;
     margin: 1rem;
     border-radius: 8px;
@@ -904,7 +1022,6 @@ footer .footer .links {
 }
 
 .donation .container .container-box .content a{
-    color: var(--red);
     font-weight: 600;
 }
 
@@ -944,5 +1061,89 @@ footer .footer .links {
     border: 10px solid #fff;
 }
 
+.gallery{
+    margin-top: .3rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.gallery .box{
+    height: 23rem;
+    flex-grow: 1;
+    border-radius: .8rem;
+}
+
+.gallery .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mission{
+    padding-top: 0.5rem;
+    position: relative;
+}
+
+.mission .imagex{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.marquee-w {
+    position: relative;
+    display: block;
+    width: 750px;
+    height: 140px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    
+}
+
+.marquee {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+    height: 100%;
+}
+
+.marquee span{
+    display: inline-block;
+    padding-left: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: #f3f4f7;
+    -webkit-text-stroke: 1px #c6dff8;
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    line-height: 140px;
+    font-size: 65px;
+    animation: marquee 14s linear infinite;
+}
+
+.marquee-z span{
+    animation-delay: 5s;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
 
 
